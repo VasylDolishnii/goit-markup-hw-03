@@ -1,134 +1,118 @@
+:root {
+  --link_and_button_color: #2196f3;
+  --letters_and_logo_color_black: #212121;
+  --letters_and_logo_color_white: #ffffff;
+}
 body {
-  max-width: 1600px;
-  display: block;
-  margin: 8px;
   font-family: 'Roboto';
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--letters_and_logo_color_white);
+  color: var(--letters_and_logo_color_black);
   font-size: 14px;
   letter-spacing: 0.03em;
-  margin: 0 auto;
 }
 a {
   text-decoration: none;
 }
 header {
-  height: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -9px;
+  border: 1px solid #ececec;
 }
 .logo_WS {
   font-family: 'Raleway';
   font-size: 26px;
-  margin-left: 215px;
-  display: inline-block;
-  margin-top: 24px;
-  color: #000000;
+  color: var(--letters_and_logo_color_black);
 }
 .logo_blue {
-  color: #2196f3;
+  color: var(--link_and_button_color);
 }
+
 .header_link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--letters_and_logo_color_black);
+  display: inline-block;
 }
 .header_link:hover {
-  color: #2196f3;
+  color: var(--link_and_button_color);
 }
-.header_list {
-  padding-left: 93px;
+.header_kontakt > a {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header_kontakt > a:hover {
+  color: var(--link_and_button_color);
 }
 .header_list > li {
   display: inline-block;
-  padding-right: 46px;
-}
-header > nav {
-  display: inline-block;
-}
-.header_kontakt {
-  float: right;
-  margin-right: 177px;
-  margin-top: 36px;
-}
-.header_kontakt > a {
-  padding-right: 50px;
-  color: #757575;
-}
-.header_kontakt > a:hover {
-  color: #2196f3;
 }
 .title_section {
-  height: 600px;
   background: #2f303a;
   text-align: center;
-  margin-top: -38px;
 }
 .title_section > h1 {
-  width: 696px;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: rgb(255, 255, 255);
-  padding-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  color: var(--letters_and_logo_color_white);
   font-weight: 900;
+  white-space: pre-wrap;
 }
 .title_section > button {
   width: 200px;
   height: 50px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-top: -7px;
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--letters_and_logo_color_white);
+  box-shadow: 0px 4px 4px var(--letters_and_logo_color_black);
+  border-radius: 4px;
+  background-color: var(--link_and_button_color);
   cursor: pointer;
 }
 .Our_Advantages > h2 {
-  display: none;
-}
-.Our_Advantages {
-  margin-left: 215px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: normal;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .OA_list {
   display: inline-block;
+}
+.OA_list > h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .OA_list > p {
   width: 270px;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   color: #757575;
-  padding-right: 30px;
 }
-.what_we_do {
-  margin-top: 94px;
-  margin-bottom: 94px;
-  text-align: center;
+.WWD_list {
+  display: inline-block;
 }
 .what_we_do > h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-}
-.WWD_list {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: 26px;
+  letter-spacing: 0.03em;
 }
 .our_team {
-  height: 648px;
+  display: inline-block;
   text-align: center;
   background-color: #f5f4fa;
 }
@@ -138,106 +122,97 @@ header > nav {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
-
 .OT_list {
   display: inline-block;
-  margin-top: 20px;
-  margin-right: 26px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+}
+.OT_list > h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 .OT_list > p {
-  font-weight: 400;
   font-size: 16px;
   color: #757575;
+  letter-spacing: 0.03em;
 }
 footer {
-  width: 1600px;
-  height: 252px;
-  margin-left: auto;
-  margin-right: auto;
   background: #2f303a;
   line-height: 24px;
 }
 footer > .logo_WS {
-  color: #ffffff;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  color: var(--letters_and_logo_color_white);
 }
 .map_address {
-  color: #ffffff;
+  color: var(--letters_and_logo_color_white);
 }
 .contact_info {
-  color: rgba(255, 255, 255, 0.6);
+  color: #999999;
 }
-address > a {
+address {
+  font-style: normal;
+}
+address > ul {
+  list-style-type: none;
+}
+.footer_a_style {
   display: block;
-  margin-left: 215px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  margin-bottom: 9px;
 }
 address > a:hover {
-  color: #2196f3;
+  color: var(--link_and_button_color);
+}
+.current {
+  color: var(--link_and_button_color);
 }
 
 /* ⬇ <<PORTFOLIO>> ⬇ */
 
-.title_button {
-  text-align: center;
+.title_button > h1 {
+  visibility: hidden;
 }
 .TB_list {
-  display: inline-block;
+  display: inline-flex;
 }
 .TB_list > button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  display: inline-block;
-  height: 38px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-right: 4px;
+  background-color: #f5f4fa;
+  color: var(--letters_and_logo_color_black);
   border: none;
   cursor: pointer;
   letter-spacing: 0.03em;
+  font-family: inherit;
 }
 .TB_list > button:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--link_and_button_color);
+  color: var(--letters_and_logo_color_white);
 }
 .portfolio_list {
   font-weight: 700;
   font-size: 18px;
-  text-align: center;
 }
 .Port_list {
-  text-align: left;
   display: inline-block;
-  margin-top: 20px;
-  margin-right: 26px;
-  box-sizing: border-box;
-  background: #ffffff;
+  width: 370px;
+  height: 404px;
+  text-align: left;
+  background-color: var(--letters_and_logo_color_white);
   border: 1px solid #eeeeee;
 }
 .Port_list > h3 {
-  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .Port_list > p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
-  padding-left: 24px;
+  letter-spacing: 0.03em;
 }
