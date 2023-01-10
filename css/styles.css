@@ -17,6 +17,7 @@ a {
   text-decoration: none;
 }
 header {
+  max-width: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,8 +25,6 @@ header {
 }
 header > nav {
   padding-left: 15rem;
-  display: flex;
-  align-items: center;
 }
 .header_nav_portfolio {
   padding-left: 13.5rem;
@@ -81,8 +80,8 @@ header > nav {
   padding-top: 8rem;
 }
 .title_section > button {
-  left: 700px;
-  top: 430px;
+  width: 200px;
+  height: 50px;
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
