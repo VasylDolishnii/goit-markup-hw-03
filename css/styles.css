@@ -10,11 +10,25 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+ul {
+  list-style: none;
+}
 a {
   text-decoration: none;
 }
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid #ececec;
+}
+header > nav {
+  padding-left: 15rem;
+  display: flex;
+  align-items: center;
+}
+.header_nav_portfolio {
+  padding-left: 13.5rem;
 }
 .logo_WS {
   font-family: 'Raleway';
@@ -26,32 +40,35 @@ header {
 }
 
 .header_link {
+  padding-left: 48px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--letters_and_logo_color_black);
-  display: inline-block;
 }
 .header_link:hover {
   color: var(--link_and_button_color);
 }
-.header_kontakt > a {
+.header_kontakt {
+  position: absolute;
+  right: 10%;
+}
+.header_kontact_link {
+  padding-left: 50px;
   color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 .header_kontakt > a:hover {
   color: var(--link_and_button_color);
 }
 .header_list > li {
-  display: inline-block;
+  display: inline-flex;
 }
 .title_section {
-  background: #2f303a;
+  height: 600px;
+  align-items: center;
   text-align: center;
+  background: #2f303a;
 }
 .title_section > h1 {
   font-size: 44px;
@@ -60,8 +77,10 @@ header {
   color: var(--letters_and_logo_color_white);
   font-weight: 900;
   white-space: pre-wrap;
+  margin: 0;
 }
 .title_section > button {
+  position: absolute;
   width: 200px;
   height: 50px;
   font-family: 'Roboto';
@@ -75,7 +94,14 @@ header {
   background-color: var(--link_and_button_color);
   cursor: pointer;
 }
-.Our_Advantages > h2 {
+.Our_Advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Our_Advantages_h2 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -102,19 +128,30 @@ header {
   line-height: 1.71;
   color: #757575;
 }
-.WWD_list {
-  display: inline-block;
+.what_we_do_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .what_we_do > h2 {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
 .our_team {
-  display: inline-block;
   text-align: center;
   background-color: #f5f4fa;
+}
+.our_team_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .our_team > h2 {
   padding-top: 94px;
@@ -139,10 +176,11 @@ header {
   letter-spacing: 0.03em;
 }
 footer {
+  padding-left: 12rem;
   background: #2f303a;
   line-height: 24px;
 }
-footer > .logo_WS {
+.logo_WS_white {
   color: var(--letters_and_logo_color_white);
 }
 .map_address {
@@ -154,30 +192,37 @@ footer > .logo_WS {
 address {
   font-style: normal;
 }
-address > ul {
-  list-style-type: none;
-}
 .footer_a_style {
-  display: block;
   font-size: 14px;
   line-height: 1.71;
 }
 address > a:hover {
   color: var(--link_and_button_color);
 }
+.footer_portfolio {
+  padding-left: 10.5rem;
+}
 .current {
   color: var(--link_and_button_color);
 }
 
 /* ⬇ <<PORTFOLIO>> ⬇ */
-
-.title_button > h1 {
+.title_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.title_button_h1 {
   visibility: hidden;
 }
 .TB_list {
   display: inline-flex;
 }
 .TB_list > button {
+  width: 93px;
+  height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -185,6 +230,7 @@ address > a:hover {
   color: var(--letters_and_logo_color_black);
   border: none;
   cursor: pointer;
+  border-radius: 4px;
   letter-spacing: 0.03em;
   font-family: inherit;
 }
@@ -193,26 +239,41 @@ address > a:hover {
   color: var(--letters_and_logo_color_white);
 }
 .portfolio_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   font-weight: 700;
   font-size: 18px;
 }
+
 .Port_list {
-  display: inline-block;
-  width: 370px;
+  width: calc((80% - 100px) / 3);
   height: 404px;
   text-align: left;
   background-color: var(--letters_and_logo_color_white);
   border: 1px solid #eeeeee;
 }
+
+.Port_list > img {
+  width: 100%;
+  height: 294px;
+}
+
 .Port_list > h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
+  padding-left: 24px;
 }
 .Port_list > p {
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding-left: 24px;
 }
