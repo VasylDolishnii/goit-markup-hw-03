@@ -65,9 +65,9 @@ header > nav {
   display: inline-flex;
 }
 .title_section {
-  height: 600px;
-  align-items: center;
   text-align: center;
+  width: 100%;
+  height: 600px;
   background: #2f303a;
 }
 .title_section > h1 {
@@ -78,11 +78,11 @@ header > nav {
   font-weight: 900;
   white-space: pre-wrap;
   margin: 0;
+  padding-top: 8rem;
 }
 .title_section > button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
+  left: 700px;
+  top: 430px;
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
@@ -100,6 +100,9 @@ header > nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .Our_Advantages_h2 {
   position: absolute;
@@ -145,6 +148,8 @@ header > nav {
 .our_team {
   text-align: center;
   background-color: #f5f4fa;
+  margin: 0;
+  padding-bottom: 94px;
 }
 .our_team_ul {
   display: flex;
@@ -246,6 +251,8 @@ address > a:hover {
   gap: 30px;
   font-weight: 700;
   font-size: 18px;
+  margin: 0;
+  padding-bottom: 94px;
 }
 
 .Port_list {
