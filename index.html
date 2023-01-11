@@ -13,12 +13,12 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <nav class="header_nav_portfolio">
+            <div class="container header_helper">
+                <nav class="header_nav">
                     <a href="index.html" class="logo_WS"><span class="logo_blue">Web</span>Studio</a>
                     <ul class="header_list">
-                        <li><a class="header_link" href="index.html" >Agencja</a></li>
-                        <li><a class="header_link current" href="portfolio.html" >Portfolio</a></li>
+                        <li><a class="header_link current" href="index.html" >Agencja</a></li>
+                        <li><a class="header_link" href="portfolio.html" >Portfolio</a></li>
                         <li><a class="header_link " href="#">Kontakt</a></li>
                     </ul>
                 </nav>
@@ -30,16 +30,19 @@
             </header>
         <main>
             <section class="title_section">
-                <h1>
-                    EFEKTYWNE ROZWIĄZANIA
-                    DLA WASZEGO BIZNESU
-                </h1>
-                <button type="button">
-                    Zamów usługe
-                </button>
+                <div class="container">
+                 <h1 class="title_section_h1">
+                     EFEKTYWNE ROZWIĄZANIA
+                     DLA WASZEGO BIZNESU
+                 </h1>
+                 <button class="title_section_button" type="button">
+                     Zamów usługe
+                 </button>
+            </div>
             </section>
 
-            <section>
+            <section class="section">
+              <div class="container">
                 <h2 class="Our_Advantages_h2">Nasze atuty</h2>
                 <ul class="Our_Advantages">
                     <li class="OA_list">
@@ -75,32 +78,39 @@
                         </p>
                     </li>
                 </ul>
+              </div>
             </section>
-            <section class="what_we_do">
-                <h2>Czym się zajmujemy</h2>
+            <section class="section">
+              <div class="container">
+                <h2 class="what_we_do_h2">Czym się zajmujemy</h2>
                 <ul class="what_we_do_list">
                     <li class="WWD_list"><img src="images/wht_w_d_1.jpg" alt="Praca pszy komputerze" width="370"></li>
                     <li class="WWD_list"><img src="images/wht_w_d_2.jpg" alt="Praca pszy Telefonie" width="370"></li>
                     <li class="WWD_list"><img src="images/wht_w_d_3.jpg" alt="Praca pszy tablecie" width="370"></li>
                 </ul>
+              </div>
             </section>
-            <section class="our_team">
-                <h2>Nasz zespół</h2>
+            <section class="our_team section">
+              <div class="container">
+                <h2 class="our_team_h2">Nasz zespół</h2>
                 <ul class="our_team_ul">
                     <li class="OT_list"><img src="images/worker_1.jpg" alt="John Doe" width="270" height="260"><h3>John Doe</h3> <p>Product Designer</p></li>
                     <li class="OT_list"><img src="images/worker_2.jpg" alt="John Doe" width="270" height="260"><h3>John Doe</h3> <p>Frontend Developer</p></li>
                     <li class="OT_list"><img src="images/worker_3.jpg" alt="John Doe" width="270" height="260"><h3>John Doe</h3> <p>Marketing</p></li>
                     <li class="OT_list"><img src="images/worker_4.jpg" alt="John Doe" width="270" height="260"><h3>John Doe</h3> <p>UI Designer</p></li>
                 </ul>
+              </div>
             </section>
         </main>
-        <footer>
-            <ul>
-                <li><a href="index.html" class="logo_WS logo_WS_white"><span class="logo_blue">Web</span>Studio</a></li>
-                <li><a class="map_address " href="https://goo.gl/maps/nUJ5Fd3hbuF8FEqy5">m. Warszawa, Aleje Jerozolimskie 21</a></li>
-                <li><a class="contact_info " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="contact_info " href="tel:+48111111111">+48 111 111 111</a></li>
-            </ul>
+        <footer class="footer_portfolio">
+            <div class="container">
+             <ul>
+                 <li><a href="index.html" class="logo_WS logo_WS_white"><span class="logo_blue">Web</span>Studio</a></li>
+                 <li><a class="map_address " href="https://goo.gl/maps/nUJ5Fd3hbuF8FEqy5">m. Warszawa, Aleje Jerozolimskie 21</a></li>
+                 <li><a class="contact_info " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                 <li><a class="contact_info " href="tel:+48111111111">+48 111 111 111</a></li>
+             </ul>
+            </div>
         </footer>
     </body>
 </html>
